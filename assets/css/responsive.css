@@ -2,7 +2,82 @@
 }
 
 @media screen and (min-width: 992px) {
+	.header-bottom {
+		background: #e9ecef;
+		border-bottom: 4px solid var(--primary-color);
+		border-top: 1px solid var(--bs-gray-300);
+	}
 
+	.header-bottom .header-navigation > ul {
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	.header-bottom .header-navigation > ul > li > ul {
+		position: absolute;
+		border-radius: 0;
+		-webkit-box-shadow: 0 12px 30px rgba(45, 56, 68, .05);
+		box-shadow: 0 12px 30px rgba(45, 56, 68, .05);
+		-webkit-transform: translateY(15px);
+		-ms-transform: translateY(15px);
+		transform: translateY(15px);
+		-webkit-transform-origin: center top;
+		-ms-transform-origin: center top;
+		transform-origin: center top;
+		-webkit-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+		-o-transition: all .3s cubic-bezier(.645, .045, .355, 1);
+		transition: all .3s cubic-bezier(.645, .045, .355, 1);
+		will-change: transform;
+		left: 0;
+		top: 100%;
+		background-color: var(--bs-white);
+		min-width: 200px;
+		width: -webkit-max-content;
+		width: -moz-max-content;
+		width: max-content;
+		opacity: 0;
+		visibility: hidden;
+		pointer-events: none;
+	}
+
+	.header-bottom .header-navigation > ul > li > ul:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: -20px;
+		left: 24px;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 10px;
+		border-color: transparent transparent var(--bs-white);
+	}
+
+	.header-bottom .header-navigation > ul > li:hover > a {
+		color: var(--primary-hover);
+	}
+
+	.header-bottom .header-navigation > ul > li:hover > a > i {
+		-webkit-transform: rotate(180deg);
+		-ms-transform: rotate(180deg);
+		transform: rotate(180deg);
+	}
+
+	.header-bottom .header-navigation > ul > li:hover > ul {
+		-webkit-transform: translateY(0);
+		-ms-transform: translateY(0);
+		transform: translateY(0);
+		opacity: 1;
+		visibility: visible;
+		pointer-events: auto;
+	}
+
+	.header-bottom .header-navigation > ul > li > ul > li:hover > a {
+		color: var(--bs-white);
+		background-color: var(--primary-color);
+	}
 }
 
 @media screen and (max-width: 991px) {

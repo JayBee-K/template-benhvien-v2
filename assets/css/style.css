@@ -1,3 +1,110 @@
+.header {
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 12;
+	position: sticky;
+	background: var(--bs-white);
+}
+
+.header-top {
+	padding: 10px 0;
+}
+
+.header-top .header-info .header-info_item {
+	display: flex;
+	gap: 8px;
+	padding: 8px;
+	border: 1px solid var(--primary-color);
+	background: rgba(8, 103, 173, 0.05);
+	border-radius: 8px;
+	position: relative;
+	overflow: hidden;
+	transition: var(--transition-default);
+	font-size: 1.075em;
+}
+
+.header-top .header-info .header-info_item .header-info_item__content .header-info_item__title {
+	font-weight: 700;
+	color: var(--bs-black);
+	display: flex;
+	gap: 5px;
+	align-items: center;
+}
+
+.header-top .header-info .header-info_item > img {
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+}
+
+.header-top .header-info .header-info_item .header-info_item__content .header-info_item__value > a {
+	color: inherit;
+}
+
+.header-top .header-info .header-info_item .header-info_item__content .header-info_item__value > a:hover {
+	color: var(--primary-color);
+}
+
+.header-bottom .header-navigation ul {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+.header-bottom .header-navigation > ul {
+	display: flex;
+	align-items: center;
+	justify-self: flex-start;
+	gap: 25px;
+}
+
+.header-bottom .header-navigation > ul > li {
+	position: relative;
+}
+
+.header-bottom .header-navigation > ul > li > a {
+	color: var(--primary-color);
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 500;
+	gap: 3px;
+	padding: 15px 0;
+	font-size: 1.075em;
+	text-transform: uppercase;
+}
+
+.header-bottom .header-navigation > ul > li > a > i {
+	font-size: .925em;
+	-webkit-transition: .3s transform ease-in-out;
+	-o-transition: .3s transform ease-in-out;
+	transition: .3s transform ease-in-out;
+}
+
+.header-bottom .header-navigation > ul > li > ul > li > a {
+	color: #212529;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	font-weight: 500;
+	gap: 3px;
+	padding: 10px 12px;
+	border-radius: 0;
+	font-size: 1.075em;
+	width: 100%;
+}
+
+.header-bottom .header-navigation > ul > li > ul > li + li > a {
+	border-top: 1px dotted var(--bs-gray-200);
+}
+
 .section-heading {
 	border-bottom: 5px solid var(--primary-color);
 	margin-bottom: 20px;
