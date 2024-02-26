@@ -194,6 +194,23 @@ $(function () {
 		});
 	}
 
+	if ($('#slider-article').length) {
+		new Swiper('#slider-article .swiper', {
+			speed: 500,
+			spaceBetween: 15,
+			slidesPerView: 4,
+			autoplay: {
+				delay: 5000,
+				disableOnInteraction: true,
+			},
+			loop: 1,
+			navigation: {
+				nextEl: "#slider-article .slider-buttons .slider-button_next",
+				prevEl: "#slider-article .slider-buttons .slider-button_prev",
+			},
+		});
+	}
+
 	if ($('#slider-video').length) {
 		new Swiper('#slider-video .swiper', {
 			speed: 500,
