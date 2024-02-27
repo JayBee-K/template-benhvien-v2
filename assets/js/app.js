@@ -201,6 +201,82 @@ $(function () {
         });
     }
 
+    if ($('#slider-doctor_info').length && $('#slider-doctor_thumb').length) {
+        let sliderDoctorThumb = new Swiper('#slider-doctor_thumb .swiper', {
+            speed: 1000,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            loop: false,
+            breakpoints: {
+                1359: {
+                    slidesPerView: 8,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                375: {
+                    slidesPerView: 1.5,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+
+        let sliderDoctorInfo = new Swiper('#slider-doctor_info .swiper', {
+            loop: false,
+            effect: 'fade',
+            fadeEffect: {
+                crossFade: true
+            },
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            slidesPerView: 1,
+            thumbs: {
+                swiper: sliderDoctorThumb,
+            },
+            navigation: {
+                nextEl: "#slider-doctor_info__next",
+                prevEl: "#slider-doctor_info__prev",
+            },
+        });
+    }
+
+    if ($('#slider-service').length) {
+        new Swiper('#slider-service .swiper', {
+            speed: 1000,
+            spaceBetween: 15,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            loop: 1,
+            navigation: {
+                nextEl: "#slider-service .slider-buttons .slider-button_next",
+                prevEl: "#slider-service .slider-buttons .slider-button_prev",
+            },
+            breakpoints: {
+                1359: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                375: {
+                    slidesPerView: 1.5,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+    }
+
     if ($('#slider-article').length) {
         new Swiper('#slider-article .swiper', {
             speed: 500,
@@ -222,11 +298,11 @@ $(function () {
         new Swiper('#slider-video .swiper', {
             speed: 500,
             spaceBetween: 15,
-	        slidesPerView: 2,
-	        grid: {
-		        rows: 2,
-		        fill: "row",
-	        },
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: "row",
+            },
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true,
@@ -243,11 +319,11 @@ $(function () {
         new Swiper('#slider-gallery .swiper', {
             speed: 500,
             spaceBetween: 15,
-	        slidesPerView: 2,
-	        grid: {
-		        rows: 2,
-		        fill: "row",
-	        },
+            slidesPerView: 2,
+            grid: {
+                rows: 2,
+                fill: "row",
+            },
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true,
@@ -259,34 +335,4 @@ $(function () {
             },
         });
     }
-
-	if ($('#slider-service').length) {
-		new Swiper('#slider-service .swiper', {
-			speed: 1000,
-			spaceBetween: 15,
-			autoplay: {
-				delay: 5000,
-				disableOnInteraction: true,
-			},
-			loop: 1,
-			navigation: {
-				nextEl: "#slider-service .slider-buttons .slider-button_next",
-				prevEl: "#slider-service .slider-buttons .slider-button_prev",
-			},
-			breakpoints: {
-				1359: {
-					slidesPerView: 4,
-				},
-				768: {
-					slidesPerView: 2.5,
-				},
-				375: {
-					slidesPerView: 1.5,
-				},
-				320: {
-					slidesPerView: 1,
-				}
-			},
-		});
-	}
 });
