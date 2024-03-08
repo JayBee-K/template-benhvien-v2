@@ -164,10 +164,13 @@
         transform: translateY(0) !important;
         min-width: 100%;
         padding: 3px;
+        pointer-events: auto !important;
     }
 
     .header-bottom .header-search .header-search_form .header-search_button {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 1em;
         width: 32px;
         height: 28px;
@@ -391,7 +394,7 @@
     }
 
     .header.is-scroll .header-navigation,
-    .header.is-scroll .header-overlay{
+    .header.is-scroll .header-overlay {
         transform: translateY(65px);
         height: calc(100vh + 65px);
     }
