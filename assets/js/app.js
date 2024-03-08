@@ -270,7 +270,6 @@ $(function () {
         new Swiper('#slider-partner .swiper', {
             speed: 500,
             spaceBetween: 15,
-            slidesPerView: 6,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true,
@@ -282,7 +281,7 @@ $(function () {
             },
             breakpoints: {
                 1359: {
-                    slidesPerView: 4,
+                    slidesPerView: 8,
                 },
                 768: {
                     slidesPerView: 3.5,

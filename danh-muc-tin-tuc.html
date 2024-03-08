@@ -33,9 +33,9 @@
 
     <style>
         :root {
-            --primary-color: #0266ae;
-            --primary-hover: #004373;
-            --primary-rgb: 2, 102, 174;
+            --primary-color: #004900;
+            --primary-hover: #002f00;
+            --primary-rgb: 0, 73, 0;
             --secondary-color: #f58220;
             --secondary-hover: #e37316;
             --secondary-rgb: 245, 130, 32;
@@ -47,55 +47,110 @@
 <div id="header" class="header">
     <div class="header-top">
         <div class="container">
-            <div class="row g-4 align-items-center">
-                <div class="col-lg-3">
-                    <div class="header-logo">
-                        <a href="" class="d-inline-block">
-                            <img src="./assets/images/logo-temp.jpg" class="img-fluid" alt="">
-                        </a>
-                    </div>
+            <div class="header-inner">
+                <div class="header-logo hstack">
+                    <a href="" class="d-inline-block flex-shrink-0">
+                        <img src="./assets/images/logo.jpg" class="mw-100" alt="">
+                    </a>
                 </div>
-                <div class="col-lg-9">
-                    <div class="header-info hstack justify-content-end gap-15px">
-                        <div class="header-info_item">
-                            <img src="./assets/images/header/1-300x300.png" class="img-fluid" alt="">
-                            <div class="header-info_item__content">
-                                <div class="header-info_item__title">
-                                    Địa chỉ
-                                </div>
-                                <div class="header-info_item__value">
-                                    530 Lý Bôn, P. Quang Trung, TP.Thái Bình, Tỉnh Thái Bình
-                                </div>
-                            </div>
+                <div class="header-image">
+                    <img src="./assets/images/visknd.jpg" class="mw-100" alt="">
+                </div>
+                <div class="header-action">
+                    <div class="header-action_top">
+                        <div class="header-action_item header-action_desktop">
+                            <a href="">
+                                <i class="fas fa-sign-in-alt"></i>
+                                Đăng ký
+                            </a>
                         </div>
-                        <div class="header-info_item">
-                            <img src="./assets/images/header/2-280x300.png" class="img-fluid" alt="">
-                            <div class="header-info_item__content">
-                                <div class="header-info_item__title">
-                                    Hotline Trực KHTH
-                                </div>
-                                <div class="header-info_item__value">
-                                    <a href="">
-                                        0346.360.808
-                                    </a>
-                                </div>
-                            </div>
+                        <div class="header-action_item header-action_desktop">
+                            <a href="">
+                                <i class="fas fa-user-alt"></i>
+                                Đăng nhập
+                            </a>
                         </div>
-                        <div class="header-info_item">
-                            <img src="./assets/images/header/3-300x300.png" class="img-fluid" alt="">
-                            <div class="header-info_item__content">
-                                <div class="header-info_item__title">
-                                    Hỗ trợ khám
-                                </div>
-                                <div class="header-info_item__value">
+                        <!--
+                        <div class="header-action_item header-action_desktop">
+                            <a href="">
+                                <i class="fas fa-user-alt"></i>
+                                Tài khoản
+                                <span>
+                                    <i class="fal fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="header-user_list">
+                                <li>
                                     <a href="">
-                                        0352.663.895
-                                    </a>-
-                                    <a href="">
-                                        0868.530.112
+                                        Thông tin tài khoản
                                     </a>
-                                </div>
-                            </div>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Đổi mật khẩu
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Đăng xuất
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        -->
+                        <div class="header-action_item header-action_mobile">
+                            <a href="">
+                                <i class="fas fa-user-alt"></i>
+                                <span class="d-none d-sm-inline-flex">
+                                    Tài khoản
+                                </span>
+                                <span class="d-none d-sm-inline-flex">
+                                    <i class="fal fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="header-user_list">
+                                <li>
+                                    <a href="">
+                                        Đăng nhập
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        Đăng ký
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header-action_item">
+                            <a href="">
+                                <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                                Tiếng Việt
+                                <span>
+                                    <i class="fal fa-angle-down"></i>
+                                </span>
+                            </a>
+                            <ul class="header-language_list">
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
+                                        Tiếng Việt
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <img src="./assets/images/language/en.png" class="img-fluid" alt="">
+                                        English
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="header-action_bottom">
+                        <div class="header-action_item">
+                            <a href="">
+                                <i class="fas fa-phone-alt"></i>
+                                Hotline: 1900 1089
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -107,6 +162,11 @@
             <div class="hstack gap-10px">
                 <div class="header-navigation" id="header-navigation">
                     <ul>
+                        <li class="navigation-logo d-flex d-lg-none">
+                            <a href="" class="d-inline-flex align-middle" data-href="">
+                                <img src="./assets/images/logo.jpg" class="img-fluid">
+                            </a>
+                        </li>
                         <li>
                             <a href="">Trang chủ</a>
                         </li>
@@ -213,26 +273,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="header-language ms-auto position-relative">
-                    <button type="button" class="header-language_button">
-                        <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
-                    </button>
-                    <ul class="header-language_list">
-                        <li>
-                            <a href="">
-                                <img src="./assets/images/language/vn.png" class="img-fluid" alt="">
-                                Tiếng Việt
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <img src="./assets/images/language/en.png" class="img-fluid" alt="">
-                                English
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header-search headerSearch">
+                <div class="header-search ms-auto headerSearch">
                     <button type="button" class="header-search_button callSearch">
                         <i class="far fa-search"></i>
                     </button>
@@ -244,6 +285,14 @@
                             </button>
                         </div>
                     </form>
+                </div>
+                <div class="header-hamburger d-flex d-lg-none">
+                    <button type="button" class="hamburger-button" id="hamburger-button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -265,9 +314,9 @@
                 </ol>
             </div>
             <div class="section-gap">
-                <div class="row">
+                <div class="row g-4">
                     <div class="col-lg-9">
-                        <div class="section-heading">
+                        <div class="section-heading align-items-start">
                             <h1 class="heading-title">
                                 Danh sách tin tức
                             </h1>
@@ -685,7 +734,7 @@
                     <div class="col-lg-3">
                         <div class="article-sidebar">
                             <div class="article-sidebar_item">
-                                <div class="section-heading">
+                                <div class="section-heading align-items-start">
                                     <div class="heading-title">
                                         Tin mới nhất
                                     </div>
@@ -826,7 +875,7 @@
                                 </div>
                             </div>
                             <div class="article-sidebar_item">
-                                <div class="section-heading">
+                                <div class="section-heading align-items-start">
                                     <div class="heading-title">
                                         ĐỌC NHIỀU NHẤT
                                     </div>
@@ -1054,6 +1103,14 @@
                                         Tác Xã
                                         Hội - Bệnh viện Đa khoa tỉnh Thái Bình</a></blockquote>
                                 </div>
+                            </div>
+                            <div class="footer-images hstack gap-5px mt-3">
+                                <a href="" class="d-inline-block align-middle">
+                                    <img src="./assets/images/appstore.svg" height="40px" class="w-auto mw-100" alt="">
+                                </a>
+                                <a href="" class="d-inline-block align-middle">
+                                    <img src="./assets/images/googleplay.png" height="40px" class="w-auto mw-100" alt="">
+                                </a>
                             </div>
                         </div>
                     </div>

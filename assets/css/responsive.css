@@ -476,4 +476,8 @@
     .footer-list .footer-list_item {
         font-size: 1em;
     }
+
+    .section-card .card-title {
+        font-size: 1.3em;
+    }
 }
