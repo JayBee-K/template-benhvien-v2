@@ -201,64 +201,19 @@ $(function () {
         });
     }
 
-    if ($('#slider-doctor_info').length && $('#slider-doctor_thumb').length) {
-        let sliderDoctorThumb = new Swiper('#slider-doctor_thumb .swiper', {
-            speed: 1000,
+    if ($('#slider-video').length) {
+        new Swiper('#slider-video .swiper', {
+            speed: 500,
             spaceBetween: 15,
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true,
-            },
-            loop: false,
-            breakpoints: {
-                1359: {
-                    slidesPerView: 8,
-                },
-                768: {
-                    slidesPerView: 2.5,
-                },
-                375: {
-                    slidesPerView: 1.5,
-                },
-                320: {
-                    slidesPerView: 1,
-                }
-            },
-        });
-
-        let sliderDoctorInfo = new Swiper('#slider-doctor_info .swiper', {
-            loop: false,
-            effect: 'fade',
-            fadeEffect: {
-                crossFade: true
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true,
-            },
-            slidesPerView: 1,
-            thumbs: {
-                swiper: sliderDoctorThumb,
-            },
-            navigation: {
-                nextEl: "#slider-doctor_info__next",
-                prevEl: "#slider-doctor_info__prev",
-            },
-        });
-    }
-
-    if ($('#slider-service').length) {
-        new Swiper('#slider-service .swiper', {
-            speed: 1000,
-            spaceBetween: 15,
+            slidesPerView: 4,
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: true,
             },
             loop: 1,
             navigation: {
-                nextEl: "#slider-service .slider-buttons .slider-button_next",
-                prevEl: "#slider-service .slider-buttons .slider-button_prev",
+                nextEl: "#slider-video .slider-buttons .slider-button_next",
+                prevEl: "#slider-video .slider-buttons .slider-button_prev",
             },
             breakpoints: {
                 1359: {
@@ -277,8 +232,8 @@ $(function () {
         });
     }
 
-    if ($('#slider-article').length) {
-        new Swiper('#slider-article .swiper', {
+    if ($('#slider-gallery').length) {
+        new Swiper('#slider-gallery .swiper', {
             speed: 500,
             spaceBetween: 15,
             slidesPerView: 4,
@@ -288,50 +243,56 @@ $(function () {
             },
             loop: 1,
             navigation: {
-                nextEl: "#slider-article .slider-buttons .slider-button_next",
-                prevEl: "#slider-article .slider-buttons .slider-button_prev",
-            },
-        });
-    }
-
-    if ($('#slider-video').length) {
-        new Swiper('#slider-video .swiper', {
-            speed: 500,
-            spaceBetween: 15,
-            slidesPerView: 2,
-            grid: {
-                rows: 2,
-                fill: "row",
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true,
-            },
-            loop: 1,
-            navigation: {
-                nextEl: "#slider-video .slider-buttons .slider-button_next",
-                prevEl: "#slider-video .slider-buttons .slider-button_prev",
-            },
-        });
-    }
-
-    if ($('#slider-gallery').length) {
-        new Swiper('#slider-gallery .swiper', {
-            speed: 500,
-            spaceBetween: 15,
-            slidesPerView: 2,
-            grid: {
-                rows: 2,
-                fill: "row",
-            },
-            autoplay: {
-                delay: 5000,
-                disableOnInteraction: true,
-            },
-            loop: 1,
-            navigation: {
                 nextEl: "#slider-gallery .slider-buttons .slider-button_next",
                 prevEl: "#slider-gallery .slider-buttons .slider-button_prev",
+            },
+            breakpoints: {
+                1359: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                375: {
+                    slidesPerView: 1.5,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+    }
+
+    if ($('#slider-partner').length) {
+        new Swiper('#slider-partner .swiper', {
+            speed: 500,
+            spaceBetween: 15,
+            slidesPerView: 6,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            loop: 1,
+            navigation: {
+                nextEl: "#slider-partner .slider-buttons .slider-button_next",
+                prevEl: "#slider-partner .slider-buttons .slider-button_prev",
+            },
+            breakpoints: {
+                1359: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3.5,
+                },
+                375: {
+                    slidesPerView: 2.5,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
             },
         });
     }
