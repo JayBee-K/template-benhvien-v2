@@ -505,6 +505,10 @@
     padding-top: 0;
 }
 
+.section-banner .swiper-slide > a {
+    width: 100%;
+}
+
 .section-gallery .gallery-item {
     width: 100%;
     position: relative;
@@ -757,6 +761,11 @@
 
 .footer-list .footer-list_item > a:hover {
     opacity: .8;
+}
+
+.footer-iframe {
+    width: 100%;
+    overflow: hidden;
 }
 
 .footer-statistical {
@@ -1156,4 +1165,86 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.appointment-card {
+    box-shadow: 0px 24px 40px rgba(3, 110, 178, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.appointment-card .card-header {
+    background: var(--primary-color);
+    padding: 30px 24px;
+}
+
+.appointment-card .card-header .section-heading {
+    gap: 15px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.appointment-card .card-header .section-heading .heading-title {
+    color: var(--bs-white);
+}
+
+.appointment-card .card-header .section-heading .heading-desc {
+    color: #f1f1f1;
+    font-size: 1.15em;
+    padding: 0 72px;
+}
+
+.appointment-card .card-body {
+    border: 1px solid #e1e1e1;
+    border-top: 0;
+    padding: 24px;
+    background: var(--bs-white);
+    border-radius: 0 0 10px 10px;
+}
+
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.appointment-form .appointment-form_item {
+    width: 100%;
+    position: relative;
+}
+
+.appointment-form .appointment-form_item .appointment-form_field {
+    width: 100%;
+    padding: 10px 15px;
+    font-size: 1.075em;
+    color: var(--bs-black);
+}
+
+.appointment-form .appointment-form_item .appointment-form_field::placeholder {
+    opacity: .7;
+}
+
+.appointment-form .appointment-form_item .appointment-form_field:focus {
+    border-color: var(--bs-gray-400) !important;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .15) !important;
+    outline: none !important;
+}
+
+
+.appointment-form .appointment-form_item .appointment-form_icon {
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    transform: translateY(-50%);
+    height: calc(100% - 6px);
+    width: 30px;
+    font-size: 1.075em;
+    color: var(--bs-black);
+    background: var(--bs-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+    cursor: pointer;
 }

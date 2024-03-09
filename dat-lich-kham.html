@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./assets/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/plugins/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./assets/plugins/fancybox/fancybox.min.css">
+    <link rel="stylesheet" href="./assets/plugins/daterangepicker/daterangepicker.css">
     <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -309,11 +310,80 @@
                         <a href="#"><i class="fas fa-home-alt me-1"></i>Trang chủ</a>
                     </li>
                     <li class="breadcrumb-item">
-                        Danh mục tin tức
+                        Đặt lịch khám
                     </li>
                 </ol>
             </div>
             <div class="section-gap">
+                <div class="row g-4">
+                    <div class="col-lg-7">
+                        <div class="appointment-card card border-0">
+                            <div class="card-header border-0">
+                                <div class="section-heading flex-column align-items-center justify-content-center">
+                                    <div class="heading-title">
+                                        ĐẶT LỊCH KHÁM CHỮA BỆNH
+                                    </div>
+                                    <div class="heading-desc">
+                                        <p>
+                                            Quý khách sử dụng dịch vụ Đặt hẹn trực tuyến, xin vui lòng đặt trước ít nhất
+                                            là 24 giờ trước khi đến khám.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <form action="">
+                                    <div class="appointment-form">
+                                        <div class="appointment-form_item">
+                                            <input type="text" class="form-control appointment-form_field"
+                                                   placeholder="Họ và tên (*)">
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <input type="text" class="form-control appointment-form_field"
+                                                   placeholder="Số điện thoại (*)">
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <input type="text" class="form-control appointment-form_field"
+                                                   placeholder="Email">
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <input type="text" class="form-control appointment-form_field"
+                                                   placeholder="Tuổi">
+                                        </div>
+                                        <div class="appointment-form_item initDateRangePicker">
+                                            <span class="appointment-form_icon"><i
+                                                    class="fas fa-calendar-alt"></i></span>
+                                            <input type="text" class="form-control appointment-form_field"
+                                                   placeholder="Ngày đặt">
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <select name="" class="form-select appointment-form_field" id="">
+                                                <option value="">Buổi sáng</option>
+                                                <option value="">Buổi chiều</option>
+                                            </select>
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <select name="" class="form-select appointment-form_field" id="">
+                                                <option value="">Đặt lịch khám</option>
+                                                <option value="">Đặt lịch tiêm chủng</option>
+                                            </select>
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <textarea placeholder="Mô tả yêu cầu" class="form-control appointment-form_field" rows="4"></textarea>
+                                        </div>
+                                        <div class="appointment-form_item">
+                                            <div class="text-center">
+                                                <button type="submit" class="button-theme">
+                                                    Gửi yêu cầu
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -482,6 +552,8 @@
         nonce="rPWkCgUA"></script>
 
 <script type=" text/javascript" src="./assets/plugins/jquery.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/daterangepicker/moment.min.js"></script>
+<script type=" text/javascript" src="./assets/plugins/daterangepicker/daterangepicker.js"></script>
 <script type="text/javascript"
         src="./assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script type="text/javascript" src="./assets/plugins/swiper/swiper-bundle.min.js"></script>
