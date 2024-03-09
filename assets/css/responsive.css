@@ -1,4 +1,22 @@
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+@media screen and (min-width: 992px) and (max-width: 1400px) {
+    .header-top .header-inner {
+        gap: 20px;
+    }
+
+    .header-top .header-action .header-action_item + .header-action_item {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .header-top .header-action .header-action_item > a {
+        font-size: .925em;
+    }
+
+    .header-bottom .header-navigation > ul > li > a,
+    .header-bottom .header-navigation > ul > li > button {
+        padding: 15px 8px 11px;
+        font-size: 0.925em;
+    }
 }
 
 @media screen and (min-width: 992px) {

@@ -72,6 +72,7 @@
 
 .header-top .header-action .header-action_item {
     position: relative;
+    white-space: nowrap;
 }
 
 .header-top .header-action .header-action_item + .header-action_item {
@@ -239,6 +240,7 @@
     box-shadow: none;
     outline: none;
     width: 100%;
+    white-space: nowrap;
 }
 
 .header-bottom .header-navigation > ul > li > a > i {
