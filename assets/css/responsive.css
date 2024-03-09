@@ -417,6 +417,12 @@
         height: calc(100vh + 65px);
     }
 
+    .button-theme.button-theme_large {
+        font-size: 1.075em;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     .section-banner .slider-buttons {
         display: none;
     }
@@ -431,6 +437,10 @@
 
     .section-gap {
         padding: 30px 0;
+    }
+
+    .section-page .section-gap {
+        padding: 15px 0 30px;
     }
 
     .section-heading {
@@ -463,7 +473,8 @@
 
     .port-item .port-item_title,
     .section-introduction .introduction-images .introduction-images_item .introduction-images_item__title,
-    .service-card .service-card_title {
+    .service-card .service-card_title,
+    .gallery-item.gallery-item_nohover .gallery-item_title {
         font-size: 1.075em;
     }
 
@@ -497,5 +508,160 @@
 
     .section-card .card-title {
         font-size: 1.3em;
+    }
+
+    .doctor-card .card-body .card-title {
+        font-size: 1.15em;
+    }
+
+    .doctor-card .card-body .card-text {
+        font-size: 1em;
+    }
+
+    .appointment-card .card-header .section-heading .heading-desc {
+        padding: 0;
+        font-size: 1.075em;
+    }
+
+    .appointment-card .card-body {
+        padding: 15px;
+    }
+
+    .appointment-bg {
+        padding: 25px;
+    }
+
+    .appointment-bg .appointment-content .appointment-content_title {
+        font-size: 1.525em;
+    }
+
+    .appointment-bg .appointment-content .appointment-content_title > img {
+        width: 38px;
+        height: 38px;
+    }
+
+    .appointment-bg .appointment-content .appointment-content_desc {
+        font-size: 1em;
+    }
+
+    .appointment-bg .appointment-content .appointment-content_sub {
+        font-size: 1.3em;
+    }
+
+    .appointment-bg .appointment-content .appointment-content_sub > img {
+        width: 38px;
+        height: 38px
+    }
+
+    .section-results {
+        padding: 20px;
+    }
+
+    .section-results .result-title {
+        font-size: 1.525em;
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .section-results .result-title svg {
+        height: 40px;
+    }
+
+    .section-results .appointment-form .appointment-form_item {
+        width: 100%;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .section-results .appointment-form .appointment-form_item .appointment-form_label {
+        padding-right: 0;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .appointment-form .appointment-form_item .appointment-form_checkbox > span {
+        white-space: normal;
+    }
+
+    .section-results .result-desc .result-desc_content {
+        font-size: 1em;
+    }
+
+    .room-list .room-list_item .room-item_content .room-item_content__title > a {
+        font-size: 1.15em;
+    }
+
+    .room-list .room-list_item .room-item_content .room-item_content__desc,
+    .room-sidebar .room-sidebar_list .room-sidebar_list__item {
+        font-size: 1em;
+    }
+
+    .room-list {
+        flex-wrap: wrap;
+        display: flex;
+        gap: 15px;
+    }
+
+    .room-list .room-list_item {
+        flex-direction: column;
+        padding: 8px;
+        width: calc(50% - 7.5px);
+    }
+
+    .room-list .room-list_item + .room-list_item {
+        border-top: 1px solid var(--bs-gray-300);
+    }
+
+    .room-list .room-list_item .room-item_avatar {
+        width: 100%;
+    }
+
+    .room-list .room-list_item .room-item_content {
+        padding: 10px 0;
+    }
+
+    .article-detail .article-title {
+        font-size: 1.6em;
+    }
+
+    .articles-sidebar .article-sidebar_item .article-sidebar_item__title {
+        font-size: 1.15em;
+    }
+
+    .article-horizontal.article-horizontal_big .article-title {
+        font-size: 1.075em;
+    }
+
+    .article-horizontal.article-horizontal_big .article-text {
+        margin-top: 8px;
+    }
+
+    .article-horizontal.article-horizontal_big .article-avatar {
+        width: 36%;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .room-list .room-list_item {
+        width: 100%;
+    }
+
+    .articles-list.articles-list_category {
+        flex-wrap: wrap;
+        display: flex;
+    }
+
+    .articles-list .article-horizontal.article-horizontal_big {
+        flex-direction: column;
+    }
+
+    .article-horizontal.article-horizontal_big .article-avatar {
+        width: 100%;
+    }
+
+    .article-horizontal.article-horizontal_big .article-content {
+        padding: 10px 0 0;
+        margin-left: 0;
     }
 }

@@ -151,7 +151,7 @@ const handleCopyValue = function () {
 }
 
 const handleInitFancybox = function () {
-    if (windowWidth <= 991 && $('.initFancybox').length) {
+    if ($('.initFancybox').length) {
         $('.initFancybox').each(function () {
             let elm = $(this);
             Fancybox.bind(`[data-fancybox=${elm.attr('data-fancybox')}]`, {
@@ -296,6 +296,41 @@ $(function () {
         });
     }
 
+
+    if ($('#slider-relatedArticles').length) {
+        new Swiper('#slider-relatedArticles .swiper', {
+            speed: 500,
+            spaceBetween: 15,
+            slidesPerView: 4,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: true,
+            },
+            loop: 1,
+            navigation: {
+                nextEl: "#slider-relatedArticles .slider-buttons .slider-button_next",
+                prevEl: "#slider-relatedArticles .slider-buttons .slider-button_prev",
+            },
+            breakpoints: {
+                1359: {
+                    slidesPerView: 4,
+                },
+                768: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 2.5,
+                },
+                375: {
+                    slidesPerView: 1.5,
+                },
+                320: {
+                    slidesPerView: 1,
+                }
+            },
+        });
+    }
+
     const handleInitDateRangePicker = function (elmInput) {
         let format = 'DD-MM-YYYY';
         const initDateRangePicker = elmInput.daterangepicker({
@@ -350,5 +385,47 @@ $(function () {
             handleInitDateRangePicker(elmInput)
         })
     });
+
+    if ($('.callAlbum').length) {
+        $('.callAlbum').click(function () {
+            // Giữ đúng key của option
+            let listImage = [
+                {
+                    'src': 'assets/images/gallery/HOI-THI-TAY-NGHE-2022-35-2048x1536.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2013',
+                },
+                {
+                    'src': 'assets/images/gallery/ALBUM-ANH-110-NAM-1.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2024',
+                },
+                {
+                    'src': 'assets/images/gallery/HOI-THI-TAY-NGHE-2022-35-2048x1536.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2013',
+                },
+                {
+                    'src': 'assets/images/gallery/ALBUM-ANH-110-NAM-1.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2024',
+                },
+                {
+                    'src': 'assets/images/gallery/HOI-THI-TAY-NGHE-2022-35-2048x1536.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2013',
+                },
+                {
+                    'src': 'assets/images/gallery/ALBUM-ANH-110-NAM-1.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2024',
+                },
+                {
+                    'src': 'assets/images/gallery/HOI-THI-TAY-NGHE-2022-35-2048x1536.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2013',
+                },
+                {
+                    'src': 'assets/images/gallery/ALBUM-ANH-110-NAM-1.jpg',
+                    'caption': 'Hình ảnh Bệnh viện giai đoạn 1903-2024',
+                },
+            ];
+
+            Fancybox.show(listImage);
+        });
+    }
 
 });
